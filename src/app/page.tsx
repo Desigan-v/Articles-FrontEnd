@@ -5,7 +5,6 @@ import ArticleList from '../components/ArticleList';
 import AuthorArticles from '../components/AuthorArticles';
 import AllArticles from '../components/AllArticles';
 import "./globals.css";
-import 'antd'; // Import Ant Design styles
 
 const Home = () => {
   const [view, setView] = useState(''); // State to handle view rendering
