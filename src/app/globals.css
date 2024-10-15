@@ -1,0 +1,182 @@
+/* Button Styles */
+.button {
+  font-family: 'Roboto Slab', serif; /* Stylish font */
+  padding: 12px 30px; /* Padding inside the button */
+  font-size: 1.2rem; /* Font size */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 50px; /* Rounded button */
+  cursor: pointer; /* Pointer cursor on hover */
+  background: linear-gradient(45deg, #ff6f61, #3e8efc); /* Gradient background */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Light shadow */
+  transition: background 0.5s, transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+  outline: none; /* No outline on click */
+  margin: 20px; /* Space between buttons */
+}
+
+/* Hover effect for the button */
+.button:hover {
+  background: linear-gradient(45deg, #3e8efc, #ff6f61); /* Reverse gradient on hover */
+  transform: scale(1.05); /* Slightly grow the button */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Optional animation for the button on page load */
+@keyframes button-glow {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 111, 97, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.button-animated {
+  animation: button-glow 3s infinite ease-in-out; /* Continuous glow effect */
+}
+/* Center buttons in the container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Wrap buttons if the screen is small */
+}
+
+/* Optional button hover transition for a smooth feel */
+.button:hover {
+  background: linear-gradient(45deg, #3e8efc, #ff6f61);
+  transform: scale(1.05); /* Slight increase in size on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+/* globals.css */
+
+body {
+  font-family: 'cursive', sans-serif; /* Clean sans-serif font */
+  background-color: #f9f9f9; /* Light background color */
+  color: #333; /* Dark text for contrast */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6; /* Improved line height for readability */
+}
+
+h1 {
+  text-align: center;
+  color: #3a8eeb; /* Soft blue color for headings */
+  font-size: 3rem; /* Larger font size */
+  margin: 40px 0; /* Spacing above and below */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+h2 {
+  color: #555; /* Darker gray for subheadings */
+  font-size: 2rem;
+  margin: 30px 0;
+  text-align: center; /* Center alignment */
+  text-transform: uppercase; /* Uppercase letters */
+  letter-spacing: 1px; /* Slight letter spacing */
+}
+
+.container {
+  max-width: 1000px; /* Adjust container width */
+  margin: 20px auto; /* Center alignment */
+  background-color: #ffffff; /* White background for the container */
+  padding: 40px; /* Padding inside the container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+button {
+  display: inline-block; /* Inline block for button display */
+  margin: 10px; /* Margin around buttons */
+  padding: 12px 24px; /* Button padding */
+  background-color: #3a8eeb; /* Soft blue background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1.1rem; /* Button font size */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+button:hover {
+  background-color: #2c6ab4; /* Darker blue on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+input,
+textarea {
+  width: 100%; /* Full width inputs */
+  padding: 12px; /* Padding for inputs */
+  margin: 10px 0; /* Margin for spacing */
+  box-sizing: border-box; /* Include padding in width */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1rem; /* Input font size */
+  background-color: #fafafa; /* Light gray input background */
+  color: #333; /* Dark text color */
+  transition: border-color 0.2s ease, background-color 0.2s ease; /* Smooth transition */
+}
+
+input:focus,
+textarea:focus {
+  border-color: #3a8eeb; /* Blue border on focus */
+  outline: none; /* Remove outline */
+  background-color: #ffffff; /* White background on focus */
+}
+
+ul {
+  list-style-type: none; /* Remove list styling */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+li {
+  background-color: #f0f0f0; /* Light gray for list items */
+  margin: 15px 0; /* Spacing between list items */
+  padding: 15px; /* Padding inside list items */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.2s ease; /* Transition effect */
+}
+
+li:hover {
+  transform: translateY(-2px); /* Lift effect on hover */
+  background-color: #e0e0e0; /* Slightly darker on hover */
+}
+
+a {
+  color: #3a8eeb; /* Link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+a:hover {
+  color: #2c6ab4; /* Darker blue on hover */
+}
+
+.form-section {
+  margin-bottom: 20px; /* Spacing for form sections */
+}
+
+.button-group {
+  text-align: center; /* Center alignment for button groups */
+  margin-bottom: 30px; /* Spacing below button groups */
+}
+
+/* Additional Styles for Responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem; /* Smaller heading size */
+  }
+
+  h2 {
+    font-size: 1.8rem; /* Smaller subheading size */
+  }
+
+  button {
+    padding: 10px 20px; /* Smaller button padding */
+    font-size: 1rem; /* Smaller button font size */
+  }
+}
