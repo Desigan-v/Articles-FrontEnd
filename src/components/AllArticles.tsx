@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import "./styles.css";  // Import the CSS file for custom styling
+import "./styles.css";  
 
 const AllArticles = () => {
   const [articles, setArticles] = useState([]);
