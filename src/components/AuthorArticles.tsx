@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './styles.css'; // Import the custom styles
+import './styles.css';
 
 const AuthorArticles = () => {
   const [authorName, setAuthorName] = useState('');
