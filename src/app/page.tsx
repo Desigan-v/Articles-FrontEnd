@@ -13,8 +13,7 @@ const Home = () => {
 
   return (
     <div className="container">
-      <center>
-        <h1>Article Management</h1>
+        <center><h1>Article Management</h1></center>
 
         <div className="button-container">
           <button className="button" onClick={() => handleViewChange('add')}>
@@ -38,7 +37,6 @@ const Home = () => {
           {view === 'findByAuthor' && <AuthorArticles />}
           {view === 'viewAll' && <AllArticles />}
         </div>
-      </center>
     </div>
   );
 };

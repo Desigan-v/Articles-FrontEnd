@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import "./styles.css";  // Import the CSS file for custom styling
 
 const AllArticles = () => {
   const [articles, setArticles] = useState([]);
@@ -18,16 +19,16 @@ const AllArticles = () => {
   }, []);
 
   return (
-    <div>
-      <h2>All Articles</h2>
-      <ul>
+    <div className="all-articles-container">
+      <center><h2 className="title">All Articles</h2></center>
+      <ul className="article-list">
         {articles.map((article: any) => (
-          <li key={article.id}>
-            <h3>{article.article}</h3>
-            <p>{article.description}</p>
-            <p>Author: {article.authorName}</p>
+          <li key={article.id} className="article-item">
+            <h3 className="article-title">{article.article}</h3>
+            <p className="article-description">{article.description}</p>
+            <p className="article-author">Author's Name: {article.authorName}</p>
             {article.articleFile && (
-              <a href={`http://localhost:3000/${article.articleFile}`} target="_blank">
+              <a href={`http://localhost:3000/${article.articleFile}`} target="_blank" className="article-link">
                 View Article
               </a>
             )}

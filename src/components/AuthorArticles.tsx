@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './styles.css'; // Import the custom styles
 
 const AuthorArticles = () => {
   const [authorName, setAuthorName] = useState('');
@@ -15,24 +16,30 @@ const AuthorArticles = () => {
   };
 
   return (
-    <div>
-      <input
-        type="text"
-        value={authorName}
-        onChange={(e) => setAuthorName(e.target.value)}
-        placeholder="Search by Author Name"
-      />
-      <button onClick={handleSearch}>Search</button>
+    <div className="author-articles-container">
+      <h2 className="search-title">Search Articles by Author</h2>
+      <div className="search-box">
+        <input
+          type="text"
+          value={authorName}
+          onChange={(e) => setAuthorName(e.target.value)}
+          placeholder="Enter Author Name"
+          className="input-field"
+        />
+        <center>
+          <button onClick={handleSearch} className="search-button">Search</button>
+        </center>
+      </div>
 
       {articles.length > 0 && (
-        <ul>
+        <ul className="articles-list">
           {articles.map((article: any) => (
-            <li key={article.id}>
-              <h3>{article.article}</h3>
-              <p>{article.description}</p>
-              <p>Author: {article.authorName}</p>
+            <li key={article.id} className="article-item">
+              <h3 className="article-title">{article.article}</h3>
+              <p className="article-description">{article.description}</p>
+              <p className="article-author">Author: {article.authorName}</p>
               {article.articleFile && (
-                <a href={`http://localhost:3000/${article.articleFile}`} target="_blank">
+                <a href={`http://localhost:3000/${article.articleFile}`} target="_blank" className="view-article-link">
                   View Article
                 </a>
               )}
