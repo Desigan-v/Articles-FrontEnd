@@ -108,77 +108,58 @@ h1 {
   transform: translateY(-10px);
   box-shadow: 0 15px 40px rgba(255, 75, 43, 0.6);
 }
-/* Medium Devices (Tablets) */
 @media (max-width: 1024px) {
-  .add-article-form {
-      padding: 30px;
+  .container {
+    padding: 30px;
   }
 
-  .article-item {
-      padding: 15px;
+  .button {
+    padding: 10px 18px;
+    font-size: 1rem;
   }
 
-  .submit-button {
-      padding: 12px 24px;
-      font-size: 1rem;
-  }
-
-  .form-title, .title {
-      font-size: 2rem;
+  h1 {
+    font-size: 2.5rem;
   }
 }
 
-/* Small Devices (Mobile) */
+/* Mobile Devices */
 @media (max-width: 600px) {
-  .add-article-form {
-      padding: 20px;
-      border-radius: 15px;
+  .container {
+    padding: 20px;
   }
 
-  .article-item {
-      padding: 10px;
+  .button-container {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px;
   }
 
-  .submit-button {
-      padding: 10px 20px;
-      font-size: 0.9rem;
+  h1 {
+    font-size: 2rem;
   }
 
-  .form-title, .title {
-      font-size: 1.5rem;
+  .button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
   }
 
-  .article-title {
-      font-size: 1.3rem;
-  }
-
-  .article-description {
-      font-size: 1rem;
-  }
-
-  .article-author {
-      font-size: 0.9rem;
+  .content {
+    padding: 20px;
   }
 }
 
-/* Extra Small Devices (Very Small Mobile) */
+/* Extra Small Devices */
 @media (max-width: 400px) {
-  .add-article-form {
-      padding: 15px;
-      border-radius: 10px;
+  .container {
+    width: 95%;
   }
 
-  .submit-button {
-      padding: 8px 16px;
-      font-size: 0.8rem;
+  h1 {
+    font-size: 1.8rem;
   }
 
-  .form-title, .title {
-      font-size: 1.2rem;
-      text-align: center; /* Center title on small screens */
-  }
-
-  .article-item {
-      margin-bottom: 15px;
+  .button {
+    padding: 8px 12px;
+    font-size: 0.85rem;
   }
 }
