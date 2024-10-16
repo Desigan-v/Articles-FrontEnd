@@ -37,7 +37,7 @@ const AuthorArticles = () => {
             <li key={article.id} className="article-item">
               <h3 className="article-title">{article.article}</h3>
               <p className="article-description">{article.description}</p>
-              <p className="article-author">Author: {article.authorName}</p>
+              <h3 className="article-author">Author: {article.authorName}</h3>
               {article.articleFile && (
                 <a href={`http://localhost:3000/${article.articleFile}`} target="_blank" className="view-article-link">
                   View Article
