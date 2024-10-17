@@ -70,7 +70,7 @@
     background-color: rgba(0, 0, 0, 0.8);
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);/* AllArticles.css */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 
     .all-articles-container {
       background-color: rgba(0, 0, 0, 0.8);
