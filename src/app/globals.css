@@ -44,7 +44,7 @@ textarea:focus {
   backdrop-filter: blur(15px);
 }
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #f5f5f5;
   letter-spacing: 1.5px;
   margin-bottom: 40px;
@@ -52,6 +52,7 @@ h1 {
   background: linear-gradient(90deg, #ff416c, #ff4b2b);
   -webkit-background-clip: text;
   color: transparent;
+  font-family: 'Brush Script MT', cursive;
 }
 h4 {
   font-size: 2rem;
@@ -76,7 +77,7 @@ h4 {
   color: #fff;
   border: none;
   padding: 15px 30px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   border-radius: 30px;
   cursor: pointer;
   transition: all 0.4s ease;
