@@ -16,7 +16,7 @@ const Home = () => {
             <Image className='img'
                   src="/images/pro1.jpg"  // Ensure the file extension is correct
                   alt="Oops"
-                  width={838}
+                  width={1280}
                   height={200}
                   priority
               />
