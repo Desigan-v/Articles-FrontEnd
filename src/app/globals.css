@@ -1,5 +1,3 @@
-/* globals.css */
-
 * {
   margin: 0;
   padding: 0;
@@ -19,25 +17,23 @@ body {
 
 input,
 textarea {
-  width: 100%; /* Full width inputs */
-  padding: 12px; /* Padding for inputs */
-  margin: 10px 0; /* Margin for spacing */
-  box-sizing: border-box; /* Include padding in width */
-  border: 1px solid #ccc; /* Light gray border */
-  border-radius: 5px; /* Rounded corners */
-  font-size: 1rem; /* Input font size */
-  background-color: #fafafa; /* Light gray input background */
-  color: #333; /* Dark text color */
-  transition: border-color 0.2s ease, background-color 0.2s ease; /* Smooth transition */
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  font-size: 1rem; 
+  background-color: #fafafa;
+  color: #333; 
+  transition: border-color 0.2s ease, background-color 0.2s ease; 
 }
 
 input:focus,
 textarea:focus {
-  border-color: #3a8eeb; /* Blue border on focus */
-  outline: none; /* Remove outline */
-  background-color: #ffffff; /* White background on focus */
+  border-color: #3a8eeb;
+  outline: none;
 }
-/* Main Container */
 .container {
   width: 85%;
   margin: 0 auto;
@@ -47,7 +43,6 @@ textarea:focus {
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(15px);
 }
-/* Heading Styling */
 h1 {
   font-size: 3rem;
   color: #f5f5f5;
@@ -58,8 +53,17 @@ h1 {
   -webkit-background-clip: text;
   color: transparent;
 }
+h4 {
+  font-size: 2rem;
+  color: #f5f5f5;
+  letter-spacing: 1.5px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #d2d1e0, #0c08d8);
+  -webkit-background-clip: text;
+  color: transparent;
+}
 
-/* Button Container */
 .button-container {
   display: flex;
   justify-content: center;
@@ -67,7 +71,6 @@ h1 {
   gap: 15px;
 }
 
-/* Button Styling */
 .button {
   background: linear-gradient(45deg, #ff416c, #ff4b2b);
   color: #fff;
@@ -88,7 +91,6 @@ h1 {
   box-shadow: 0px 10px 20px rgba(255, 65, 108, 0.6);
 }
 
-/* Stylish Content Box */
 .content {
   padding: 30px;
   background: rgba(255, 255, 255, 0.1);
@@ -103,12 +105,16 @@ h1 {
   line-height: 1.6;
 }
 
-/* Transition on Content */
 .content:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 40px rgba(255, 75, 43, 0.6);
 }
+/*Responsives */
 @media (max-width: 1024px) {
+  .img {
+    width: 100%;
+    padding: 20px;
+  }
   .container {
     padding: 30px;
   }
@@ -126,11 +132,16 @@ h1 {
 /* Mobile Devices */
 @media (max-width: 600px) {
   .container {
+    width: 95%;
+    padding: 20px;
+  }
+  .img {
+    width: 100%;
     padding: 20px;
   }
 
   .button-container {
-    flex-direction: column; /* Stack buttons vertically */
+    flex-direction: column; 
     gap: 10px;
   }
 
@@ -152,8 +163,12 @@ h1 {
 @media (max-width: 400px) {
   .container {
     width: 95%;
+    padding: 20px;
   }
-
+  .img {
+    width: 95%;
+    padding: 20px;
+  }
   h1 {
     font-size: 1.8rem;
   }
@@ -163,3 +178,4 @@ h1 {
     font-size: 0.85rem;
   }
 }
+
