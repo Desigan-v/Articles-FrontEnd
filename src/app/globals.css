@@ -111,6 +111,10 @@ h4 {
 }
 /*Responsives */
 @media (max-width: 1024px) {
+  .img {
+    width: 100%;
+    padding: 20px;
+  }
   .container {
     padding: 30px;
   }
@@ -128,6 +132,7 @@ h4 {
 /* Mobile Devices */
 @media (max-width: 600px) {
   .container {
+    width: 95%;
     padding: 20px;
   }
   .img {
@@ -158,6 +163,7 @@ h4 {
 @media (max-width: 400px) {
   .container {
     width: 95%;
+    padding: 20px;
   }
   .img {
     width: 95%;
