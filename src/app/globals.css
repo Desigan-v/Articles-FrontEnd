@@ -53,6 +53,16 @@ h1 {
   -webkit-background-clip: text;
   color: transparent;
 }
+h4 {
+  font-size: 2rem;
+  color: #f5f5f5;
+  letter-spacing: 1.5px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #d2d1e0, #0c08d8);
+  -webkit-background-clip: text;
+  color: transparent;
+}
 
 .button-container {
   display: flex;
@@ -120,6 +130,10 @@ h1 {
   .container {
     padding: 20px;
   }
+  .img {
+    width: 100%;
+    padding: 20px;
+  }
 
   .button-container {
     flex-direction: column; 
@@ -145,7 +159,10 @@ h1 {
   .container {
     width: 95%;
   }
-
+  .img {
+    width: 95%;
+    padding: 20px;
+  }
   h1 {
     font-size: 1.8rem;
   }
@@ -155,3 +172,4 @@ h1 {
     font-size: 0.85rem;
   }
 }
+
