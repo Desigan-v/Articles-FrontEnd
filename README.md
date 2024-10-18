@@ -3,7 +3,7 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
     
-Before yo start the project you have to be install required packages 
+Before yo start the project we have to be install the required packages
 
 
                                           "npm install next react react-dom"
