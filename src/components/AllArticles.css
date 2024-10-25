@@ -1,0 +1,177 @@
+/* AllArticles.css */
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+/* Container styling */
+.all-articles-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Title styling */
+.title {
+    color: #00ff7f;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+/* Article list styling */
+.article-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Individual article item styling */
+.article-item {
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for article items */
+.article-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 255, 127, 0.5);
+}
+
+/* Article title styling */
+.article-title {
+    font-size: 1.8rem;
+    color: #ff416c; /* You can adjust this color */
+    margin-bottom: 10px;
+}
+
+/* Article description styling */
+.article-description {
+    font-size: 1.2rem;
+    color: #ddd;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Author name styling */
+.article-author {
+    font-size: 1.1rem;
+    color: #ffa07a;
+    margin-bottom: 10px;
+}
+
+/* View article link styling */
+.article-link {
+    color: #00ff7f;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.article-link:hover {
+    color: #ff4b2b;
+}
+.delete-button {
+  position: absolute; /* Position relative to the article item */
+  top: 10px; /* Adjust to place it higher */
+  right: 10px; /* Adjust to place it to the right */
+  background-color: transparent; /* Make the button background transparent */
+  border: none; /* Remove button border */
+  cursor: pointer; /* Show pointer on hover */
+  color: red; /* Change icon color */
+  font-size: 18px; /* Adjust icon size */
+  transition: color 0.3s ease, transform 0.2s ease; /* Add transition for color and transform */
+}
+
+.delete-button:hover {
+  color: darkred; /* Change color on hover */
+  transform: scale(1.1); /* Slightly scale up the button */
+}
+
+
+.update-button {
+  background-color: #3498db; /* Blue color for update */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Add transition for background color and transform */
+}
+
+.update-button:hover {
+  background-color: #2980b9; /* Darker blue for hover */
+  transform: scale(1.05); /* Slightly scale up the button */
+}
+
+.update-form {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+  margin: 0 auto;
+  color: #fff;  
+}
+
+.update-form input,
+.update-form textarea {
+  width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.update-form button {
+  margin-left: 10px;
+  background-color: #53b87d; /* Green color for update submit */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.update-form button:hover
+{
+  background-color: #00ff6a;
+}
+
+.update-form button[type="button"] {
+  background-color: #b33939; /* Orange color for cancel */
+}
+.update-form button:hover[type="button"]
+{
+  background-color: darkred; /* Change color on hover */
+
+}
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .article-item {
+        padding: 15px;
+    }
+
+    .article-title {
+        font-size: 1.5rem;
+    }
+
+    .article-description {
+        font-size: 1rem;
+    }
+}

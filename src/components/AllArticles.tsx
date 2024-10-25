@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './styles.css'; // Import the CSS file for custom styling
+import './AllArticles.css'; // Import the CSS file for custom styling
 
-const AllArticles: React.FC = () => {
+const AllArticles = () => {
   const [articles, setArticles] = useState<any[]>([]);
   const [isUpdating, setIsUpdating] = useState<number | null>(null);
   const [updatedArticle, setUpdatedArticle] = useState({ article: '', description: '' });
@@ -70,34 +70,37 @@ const AllArticles: React.FC = () => {
     <div className="all-articles-container">
       <center><h2 className="title">All Articles</h2></center>
 
-      <ul className="article-list">
+      <ul
+      className="article-list">
         {articles.map((article) => (
           <li key={article.id} className="article-item">
             <h3 className="article-title">{article.article}</h3>
             <p className="article-description">{article.description}</p>
-            <p className="article-author">Author's Name: {article.authorName}</p>
+            <h3 className="article-author">Author's Name: {article.authorName}</h3>
             {article.articleFile && (
               <a href={`http://localhost:3000/${article.articleFile}`} target="_blank" className="article-link">
                 View Article
               </a>
             )}
-            <button className="delete-button" onClick={() => handleDelete(article.id)}>
+            <button
+            className="delete-button" onClick={() => handleDelete(article.id)}>
               <i className="fas fa-trash-alt"></i>
             </button>
-            <button className="update-button" onClick={() => handleUpdate(article)}>
+            <button
+            className="update-button" onClick={() => handleUpdate(article)}>
               <i className="fas fa-edit"></i>
             </button>
             {isUpdating === article.id && (
               <div className="update-form">
                 <h3 className='form-title'>Update Article</h3>
                 <form onSubmit={submitUpdate}>
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     value={updatedArticle.article} 
                     onChange={(e) => setUpdatedArticle({ ...updatedArticle, article: e.target.value })} 
-                    placeholder="Article Title" 
+                    placeholder="Article Title"
                     className="input-field"
-                    required 
+                    required
                   />
                   <textarea 
                     value={updatedArticle.description} 
@@ -109,7 +112,8 @@ const AllArticles: React.FC = () => {
                   <input 
                     type="file" 
                     className='file-input'
-                    onChange={(e) => e.target.files && setFile(e.target.files[0])} 
+                    onChange={(e) => e.target.files && setFile(e.target.files[0])}
+                    required
                   />
                   <button type="submit" className='ok'><i className="fa-solid fa-check"></i></button>
                   <button type="button" className='can' onClick={() => setIsUpdating(null)}><i className="fa-solid fa-xmark"></i></button>

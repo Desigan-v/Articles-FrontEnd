@@ -1,3 +1,4 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
 * {
   margin: 0;
   padding: 0;
@@ -48,7 +49,6 @@ h1 {
   color: #f5f5f5;
   letter-spacing: 1.5px;
   margin-bottom: 40px;
-  text-transform: uppercase;
   background: linear-gradient(90deg, #ff416c, #ff4b2b);
   -webkit-background-clip: text;
   color: transparent;
@@ -110,26 +110,26 @@ h4 {
   transform: translateY(-10px);
   box-shadow: 0 15px 40px rgba(255, 75, 43, 0.6);
 }
-/*Responsives */
-@media (max-width: 1024px) {
-  .img {
-    width: 100%;
-    padding: 20px;
-  }
-  .container {
-    padding: 30px;
-  }
-
-  .button {
-    padding: 10px 18px;
-    font-size: 1rem;
-  }
-
-  h1 {
-    font-size: 2.5rem;
-  }
+.button1 {
+  position: absolute; /* Position relative to the article item */
+  top: 10px; /* Adjust to place it higher */
+  right: 10px;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0px 5px 15px rgba(255, 65, 108, 0.4);
 }
-@media (max-width: 1800px) {
+.button1:hover {
+  background: linear-gradient(45deg, #ff0000, #f1324b);
+  transform: scale(1.1);
+  box-shadow: 0px 10px 20px rgba(255, 65, 108, 0.6);
+}
+/*Responsives */
+@media (max-width: 1280px) {
   .img {
     width: 100%;
     padding: 20px;

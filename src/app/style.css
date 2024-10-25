@@ -1,0 +1,94 @@
+/* AllArticles.css */
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+/* Container styling */
+.all-articles-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.all-articles-container1 {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    width: 70%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Title styling */
+.title {
+    color: #00ff7f;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    font-family: 'Brush Script MT', italic;
+
+}
+
+/* Article list styling */
+.article-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Individual article item styling */
+.article-item {
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for article items */
+.article-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 255, 127, 0.5);
+}
+
+/* Article title styling */
+.article-title {
+    font-size: 1.8rem;
+    color: #ff416c; /* You can adjust this color */
+    margin-bottom: 10px;
+}
+
+/* Article description styling */
+.article-description {
+    font-size: 1.2rem;
+    color: #ddd;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .article-item {
+        padding: 15px;
+    }
+
+    .article-title {
+        font-size: 1.5rem;
+    }
+
+    .article-description {
+        font-size: 1rem;
+    }
+}

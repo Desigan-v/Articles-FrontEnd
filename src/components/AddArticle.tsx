@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './styles.css'; 
+import './AddArticle.css'; // Import the custom styles
 
 const AddArticle = () => {
   const [authorName, setAuthorName] = useState('');
@@ -57,7 +57,8 @@ const AddArticle = () => {
         type="file"
         onChange={(e) => setArticleFile(e.target.files?.[0] || null)}
         className="file-input"
-      />
+        required
+       />
       <center>
         <button type="submit" className="submit-button">Add Article</button>
       </center>
