@@ -7,6 +7,9 @@ import "../style.css"
 
 const Home = () => {
 
+  const [isLeftSidebarOpen, setIsLeftSidebarOpen] = useState(false);
+
+
   const router = useRouter();
     const logOut = ()=> {
         Cookies.remove("loggedin");
@@ -14,6 +17,36 @@ const Home = () => {
         
   return (
     <div className="container">
+        <button
+          className="account-icon fas fa-user-circle button2"
+          onClick={() => setIsLeftSidebarOpen(true)}
+          aria-label="Open Left Sidebar"
+        ></button>
+
+      <div className={`sidebar left ${isLeftSidebarOpen ? 'active' : ''}`}>
+        <button className="close-btn" onClick={() => setIsLeftSidebarOpen(false)}>← Back</button>
+        <div className="sidebar-content p-3">
+          <h2>Desigan</h2>
+            <Link href="/">
+              <button  className="button">
+                <i className="fas fa-home"></i> Home
+              </button>
+            </Link><br></br>
+            <Link href="/About">
+              <button  className="button">
+                <i className="fa-solid fa-people-group"></i>About
+              </button>
+            </Link><br></br>
+            <Link href="/Contect">
+              <button  className="button">
+              <i className="fa-solid fa-address-card"></i>Contect
+              </button>
+            </Link><br></br>
+          <button type='submit'
+          className='button'
+        onClick={()=>logOut()}><i className="fa-solid fa-right-from-bracket"></i>Logout</button>
+        </div>
+      </div>
       <div>
       <div className='button-container'>
             <Link href="/">
@@ -58,7 +91,7 @@ const Home = () => {
                   <p className="article-description">ArticlesHub began with a simple yet powerful idea:
                      to create a place where anyone passionate about technology and programming could 
                      find insightful, accessible articles that educate and inspire. 
-                     Our founder, Desigan, wanted a resource where complex ideas could be 
+                     Our founder, Mr.Desigan, wanted a resource where complex ideas could be 
                      simplified and shared with a wider audience. Starting as a personal project, 
                      ArticlesHub has since grown into a community-driven platform that not only supports 
                      learning but also encourages readers to think critically and contribute their own knowledge.</p><br></br>
