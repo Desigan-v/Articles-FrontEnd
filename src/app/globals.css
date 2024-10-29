@@ -40,29 +40,6 @@ body {
   flex-direction: column;
 }
 
-.sidebar-btn {
-  padding: 15px;
-  margin: 10px 0;
-  font-size: 18px;
-  background-color: #f0f0f0;
-  border-radius: 10px;
-  text-align: left;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-
-.sidebar-btn i,
-.sidebar-logout i {
-  margin-right: 10px;
-}
-
-
-.sidebar-btn:hover {
-  background-color: #DE3163;
-}
-
 .close-btn {
   background-color: transparent;
   color: rgb(44, 145, 86);
