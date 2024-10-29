@@ -7,6 +7,9 @@ import "../style.css"
 
 const Home = () => {
 
+  const [isLeftSidebarOpen, setIsLeftSidebarOpen] = useState(false);
+
+
   const router = useRouter();
     const logOut = ()=> {
         Cookies.remove("loggedin");
@@ -14,6 +17,36 @@ const Home = () => {
         
   return (
     <div className="container">
+        <button
+          className="account-icon fas fa-user-circle button2"
+          onClick={() => setIsLeftSidebarOpen(true)}
+          aria-label="Open Left Sidebar"
+        ></button>
+
+      <div className={`sidebar left ${isLeftSidebarOpen ? 'active' : ''}`}>
+        <button className="close-btn" onClick={() => setIsLeftSidebarOpen(false)}>← Back</button>
+        <div className="sidebar-content p-3">
+          <h2>Desigan</h2>
+            <Link href="/">
+              <button  className="button">
+                <i className="fas fa-home"></i> Home
+              </button>
+            </Link><br></br>
+            <Link href="/About">
+              <button  className="button">
+                <i className="fa-solid fa-people-group"></i>About
+              </button>
+            </Link><br></br>
+            <Link href="/Contect">
+              <button  className="button">
+              <i className="fa-solid fa-address-card"></i>Contect
+              </button>
+            </Link><br></br>
+          <button type='submit'
+          className='button'
+        onClick={()=>logOut()}><i className="fa-solid fa-right-from-bracket"></i>Logout</button>
+        </div>
+      </div>
       <div>
       <div className='button-container'>
             <Link href="/">
